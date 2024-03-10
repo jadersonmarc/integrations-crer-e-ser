@@ -17,8 +17,8 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true 
 
-  ENV['API_KEY'] = 'AIzaSyAv543KNvryPcKW3s7Z9xHgx3KUNKaTnww'
-  ENV['CHANNEL_ID'] = 'UC6cJKvTzvYCsGkp2MEN6Y3A'
+  api_key = ENV['API_KEY']
+  channel_id = ENV['CHANNEL_ID']
  
 
   # Enable/disable caching. By default caching is disabled.
