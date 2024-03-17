@@ -40,6 +40,7 @@ module Clients
             youtube.key = API_KEY
         
             response = youtube.list_searches('snippet', channel_id: CHANNEL_ID, type: 'video', max_results: RESULTS_PER_PAGE, order: 'rating')
+             
           end
 
     end

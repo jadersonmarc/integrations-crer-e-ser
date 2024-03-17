@@ -17,10 +17,6 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true 
 
-  ENV['API_KEY'] = 'AIzaSyAv543KNvryPcKW3s7Z9xHgx3KUNKaTnww'
-  ENV['CHANNEL_ID'] = 'UC6cJKvTzvYCsGkp2MEN6Y3A'
- 
-
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?

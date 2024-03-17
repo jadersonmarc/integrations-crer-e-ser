@@ -58,6 +58,8 @@ gem 'googleauth'
 
 gem 'google-api-client'
 
+gem 'whenever', require: false
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
     gem 'rspec-rails', '~> 4.1.0'
