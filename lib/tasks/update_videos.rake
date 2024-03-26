@@ -4,13 +4,13 @@ namespace :update do
         youtube_client = Clients::Youtube.new
         response = youtube_client.fetch_videos
   
-        response.items.each do |item|
-            video_id = item.video_id
-            title = item.title
-            description = item.description
-            published_at = item.snippet.published_at
-            thumbnail_url = item.thumbnail
-            video_url = video_url
+        response.each do |item|
+          video_id = item[:video_id]
+          title = item[:title]
+          description = item[:description]
+          published_at = item[:published_at]
+          thumbnail_url = item[:thumbnail]
+          video_url = item[:video_url]
   
         video = Video.new(
           video_id: video_id,

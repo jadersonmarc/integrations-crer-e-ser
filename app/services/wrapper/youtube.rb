@@ -20,7 +20,7 @@ module Wrapper
                   video_id: yt_video.id.video_id,
                   title: yt_video.snippet.title,
                   description: yt_video.snippet.description,
-                  video_url: "https://www.youtube.com/watch?v=#{yt_video.id.video_id}",
+                  video_url: "https://www.youtube.com/embed/#{yt_video.id.video_id}",
                   thumbnail: yt_video.snippet.thumbnails.default.url,
                 }
                 
